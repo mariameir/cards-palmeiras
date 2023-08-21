@@ -1,5 +1,78 @@
 *{
-  padding: 0px;
-  margin: 0px;
   font-family: 'Heebo', sans-serif;
+  margin:0; padding:0;
+   box-sizing: border-box;
+   outline: none; border:none;
+   text-decoration: none;
+   transition: all .2s linear;
+   text-transform: capitalize;
 }
+
+html{
+  font-size: 62.5%;  
+  overflow-x: hidden;
+}
+
+body{
+  background: #103523;
+}
+
+.container{
+  max-width: 1200px;
+   margin:0 auto;
+   padding:3rem 2rem;
+}
+
+.container .title{
+  font-size: 3.5rem;
+  color: #fdfdfd;
+  margin-bottom: 3rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.container .players-container{
+  display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+   gap:2rem;
+}
+
+
+.container .players-container .players{
+  text-align: center;
+  padding: 3rem 2rem;
+  background: #ffffff;
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+  outline: .1rem solid #27be43;
+  outline-offset: -1.5rem;
+  cursor: pointer;
+  
+}
+
+.container .players-container .players:hover{
+  outline: .6rem solid #19d110;
+  outline-offset: 0rem;
+}
+
+.container .players-container .players img{
+  height: 25rem;
+}
+
+.container .players-container .players:hover img{
+  transform: scale(.9);
+}
+
+.players-container h3{
+  font-size: 2rem;
+  color:#444;
+}
+
+.players-container .players:hover h3{
+  color: #27be43;
+}
+
+.players-container .posicao{
+  font-size: 2rem;
+  color: rgb(14, 47, 12);
+}
+
