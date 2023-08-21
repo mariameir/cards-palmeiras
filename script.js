@@ -10,7 +10,7 @@ document.querySelectorAll('.players-container .players').forEach(player => {
       if (name == target) {
         preview.classList.add('active');
       } else {
-        preview.classList.remove('active'); // Remova a classe "active" de outros jogadores
+        preview.classList.remove('active'); // Remove a classe "active" de outros jogadores
       }
     });
   };

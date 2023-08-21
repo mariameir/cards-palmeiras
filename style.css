@@ -68,7 +68,7 @@ body{
 }
 
 .players-container .players:hover h3{
-  color: #27be43;
+  color: #00F119;
 }
 
 .players-container .posicao{
@@ -141,6 +141,8 @@ body{
   padding:1rem 0;
   font-size: 1.6rem;
   color:#777;
+  text-transform: none; 
+
 }
 
 .players-preview .preview .status{
