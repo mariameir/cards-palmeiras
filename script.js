@@ -1,22 +1,24 @@
-let preveiwContainer = document.querySelector('.players-preview');
-let previewBox = preveiwContainer.querySelectorAll('.preview');
+let previewContainer = document.querySelector('.players-preview');
+let previewBox = previewContainer.querySelectorAll('.preview');
 
-document.querySelectorAll('.players-container .players').forEach(product =>{
-  product.onclick = () =>{
-    preveiwContainer.style.display = 'flex';
-    let name = product.getAttribute('data-name');
-    previewBox.forEach(preview =>{
+document.querySelectorAll('.players-container .players').forEach(player => {
+  player.onclick = () => {
+    previewContainer.style.display = 'flex';
+    let name = player.getAttribute('data-name');
+    previewBox.forEach(preview => {
       let target = preview.getAttribute('data-target');
-      if(name == target){
+      if (name == target) {
         preview.classList.add('active');
+      } else {
+        preview.classList.remove('active'); // Remova a classe "active" de outros jogadores
       }
     });
   };
 });
 
-previewBox.forEach(close =>{
-  close.querySelector('.fa-times').onclick = () =>{
+previewBox.forEach(close => {
+  close.querySelector('.fa-times').onclick = () => {
     close.classList.remove('active');
-    preveiwContainer.style.display = 'none';
+    previewContainer.style.display = 'none';
   };
 });
