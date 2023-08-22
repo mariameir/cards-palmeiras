@@ -1,10 +1,5 @@
 # Cartinhas do Verdão 🐷⚽
 
-
-## O que é isso? 🤔
-
-Isso aqui é um catálogo nterativo dos nossos jogadores favoritos do Palmeiras! 🌟 Quer saber mais sobre o elenco? É só dar uma olhada nas cartas!
-
 ## Como funciona essa bomba? 🎮
 
 1. Dê uma espiadinha na lista de jogadores. Cada um deles tem uma cartinha com sua foto, nome e posição. Escolha um!
